@@ -1,0 +1,93 @@
+/* Styling untuk keseluruhan halaman */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #d9e3f0, #f7f9fc);
+}
+
+/* Container utama */
+.card {
+    max-width: 600px;
+    margin: 20px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Header utama */
+h1 {
+    color: #007bff; /* Mengubah warna judul menjadi biru */
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Paragraf */
+p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Garis pemisah */
+hr {
+    border: none;
+    height: 2px;
+    background: #007bff; /* Mengubah warna garis menjadi biru */
+    margin: 20px 0;
+}
+
+/* Greeting */
+small {
+    display: block;
+    font-style: italic;
+    text-align: center;
+    color: #999;
+    margin-top: 10px;
+}
+
+/* Styling untuk logo (mengubah agar tidak bulat) */
+.logo {
+    max-width: 400px;
+    border-radius: 10px; /* Mengubah supaya sudut gambar tidak bulat */
+    margin-top: 20px;
+    border: 5px solid #4d8acc; /* Mengubah border menjadi biru */
+    transition: all 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Animasi fade-in untuk header */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
